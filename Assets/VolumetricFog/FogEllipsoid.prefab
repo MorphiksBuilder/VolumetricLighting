@@ -5,10 +5,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 463416}
-  - 114: {fileID: 11477592}
+  - component: {fileID: 463416}
+  - component: {fileID: 11477592}
   m_Layer: 0
   m_Name: FogEllipsoid
   m_TagString: Untagged
@@ -28,6 +28,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11477592
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -39,8 +40,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 789ae5fef74e6754ab3c20bdeca67ad9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Blend: 0
+  m_Density: 1
   m_Radius: 1
   m_Stretch: 2
+  m_Feather: 0.7
+  m_NoiseAmount: 0
+  m_NoiseSpeed: 1
+  m_NoiseScale: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
